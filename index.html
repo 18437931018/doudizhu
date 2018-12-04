@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #allPlays {
+            width: 1500px;
+            height: 500px;
+            background-color: bisque;
+            position: relative;
+            margin: 0 auto;
+            top: 50px;
+        }
+
+        #ground {
+            width: 800px;
+            height: 300px;
+            background-color: rgb(220, 255, 196);
+            position: relative;
+            margin: 0 auto;
+            top: 50px;
+        }
+
+        *.plays {
+            width: 100%;
+            height: 150px;
+            background-color: gray;
+            margin: 20px auto;
+        }
+
+        *.card {
+            width: 60px;
+            height: 90px;
+            background-color: aquamarine;
+            float: left;
+            margin-left: 5px;
+            margin-top: 50px;
+        }
+
+        #playBtnDiv {
+            width: 80px;
+            height: 90px;
+            background-color: azure;
+            float: left;
+            margin-left: 5px;
+            margin-top: 50px;
+        }
+
+        .playBtn {
+            width: 60px;
+            height: 30px;
+            margin: 5px auto;
+
+        }
+    </style>
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <div>
+        <button id="btn">开始游戏</button>
+    </div>
+
+    <div id="ground">
+
+    </div>
+
+    <div id="allPlays">
+        <div id='play1' class="plays">
+            <div class="card"> </div>
+            <div class="card"> </div>
+            <div id="playBtn">
+                <button class="playBtn">出牌</button>
+                <button class="playBtn">不出</button>
+            </div>
+        </div>
+        <div id='play2' class="plays"></div>
+        <div id='play3' class="plays"></div>
+    </div>
+</body>
+
+</html>
